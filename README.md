@@ -8,10 +8,10 @@
 **检测方式** <br>
 使用dsn方式检测从 <br>
 
-**功能**
-1. 自动创建检测用户、并授权
-2. 自动生成pt-table-checksum命令，并校验
-3. 将校验后的结果通过邮件发送给指定的收件人
+**功能**<br>
+1.自动创建检测用户、并授权
+2.自动生成pt-table-checksum命令，并校验
+3.将校验后的结果通过邮件发送给指定的收件人
 	
 **执行**<br>
 python3 ms_checksum.py -uroot -p'123.com' -s /usr/local/mysql/mysql.sock -f ms_checksum.cnf <br>
