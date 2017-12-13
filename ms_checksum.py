@@ -114,7 +114,7 @@ class InitialDsn(object):
         self.db_name = kwargs['mysql']['dsndb']
         self.user = kwargs['mysql']['user']
         self.password = kwargs['mysql']['password']
-        self.master = kwargs['mysql']['master']
+        self.master = kwargs['mysql']['master'].split(':')[0]
         self.slaves = kwargs['mysql']['slave'].split(',')
         self.login_args = kwargs['login_args']
 
