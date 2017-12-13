@@ -5,7 +5,7 @@
 #安装mysql-connector-python-2.1.6 <br>
 #cd mysql-connector-python-2.1.6 && python3 setup.py install <br>
 
-**检测方式 <br>
+**检测方式** <br>
 使用dsn方式检测从 <br>
 
 **功能
@@ -32,7 +32,7 @@ python3 ms_checksum.py -uroot -p'123.com' -s /usr/local/mysql/mysql.sock -f ms_c
 -->执行命令输出：<br>
 /usr/bin/pt-table-checksum -uchecksums -p'123.com' -h10.72.63.197 -P3306 --recursion-method dsn=D=percona,t=dsns --replicate percona.checksums -d user_center,ttt --nocheck-replication-filters --no-check-binlog-format --empty-replicate-table --replicate-check-only <br>
 
-**接收到的邮件输出
+**接收到的邮件输出**
 主库：10.72.63.197:3306 <br>
 从库：10.72.63.199:3306,10.72.63.204:3306 <br>
 被检查的库：user_center,ttt <br>
