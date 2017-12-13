@@ -15,7 +15,7 @@
 	
 **执行**<br>
 python3 ms_checksum.py -uroot -p'123.com' -s /usr/local/mysql/mysql.sock -f ms_checksum.cnf <br>
-`
+
 输出：<br>
 -> 库：percona 创建成功 <br>
 -> 表：dsns 创建成功 <br>
@@ -31,10 +31,10 @@ python3 ms_checksum.py -uroot -p'123.com' -s /usr/local/mysql/mysql.sock -f ms_c
 -> 执行主从数据差异检测 <br>
 -->执行命令输出：<br>
 /usr/bin/pt-table-checksum -uchecksums -p'123.com' -h10.72.63.197 -P3306 --recursion-method dsn=D=percona,t=dsns --replicate percona.checksums -d user_center,ttt --nocheck-replication-filters --no-check-binlog-format --empty-replicate-table --replicate-check-only <br>
-`
+
 
 **接收到的邮件输出**
-`
+
 主库：10.72.63.197:3306 <br>
 从库：10.72.63.199:3306,10.72.63.204:3306 <br>
 被检查的库：user_center,ttt <br>
@@ -58,7 +58,7 @@ ttt.t1 1 1 1 <br>
 12-13T12:25:21      0      0       11       1       0   0.018 user_center.admin_menu <br>
 
 12-13T12:25:21      0      0      264       1       0   0.019 user_center.admin_operation_log <br>
-`
+
 
 **定时任务**
 
