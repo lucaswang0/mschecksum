@@ -48,17 +48,6 @@ Differences on mysql-test-204 <br>
 TABLE CHUNK CNT_DIFF CRC_DIFF CHUNK_INDEX LOWER_BOUNDARY UPPER_BOUNDARY <br>
 ttt.t1 1 1 1 <br>
 
-检测过程输出[pt-table-checksum]：<br>
-						TS ERRORS  DIFFS     ROWS  CHUNKS SKIPPED    TIME TABLE <br>
-						
-12-13T12:25:21      0      1        3       1       0   0.021 ttt.t1 <br>
-
-12-13T12:25:21      0      0        5       1       0   0.018 user_center.admin_card_type <br>
-
-12-13T12:25:21      0      0       11       1       0   0.018 user_center.admin_menu <br>
-
-12-13T12:25:21      0      0      264       1       0   0.019 user_center.admin_operation_log <br>
-
 
 **定时任务**
 
