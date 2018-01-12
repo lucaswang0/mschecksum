@@ -9,9 +9,9 @@ dsndb = percona
 pt_table_checksum = /usr/bin/pt-table-checksum
 
 [mail]
-title = 主从数据一致性检测[jbh]
+title = 主从数据一致性检测[dss]
 mail_sender = zhangshan@163.com
 mail_receiver = lisi@163.com,
-mail_host = smtp.hnair.com
+mail_host = smtp.163.com
 mail_user = zhangshan
 mail_pass = 123.com
