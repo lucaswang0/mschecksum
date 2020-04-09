@@ -1,0 +1,21 @@
+[mysql]
+check_user = checksums
+check_pass = xxxxxxxx
+remote_host = 10.11.1.71
+master_host = 10.22.4.52
+master_port = 3306
+master_user = root
+master_pass = xxxxxxx
+slave_hosts = 10.22.4.51:3306,10.22.4.53:3306
+pt_table_checksum = /usr/bin/pt-table-checksum
+pt_table_sync = /usr/bin/pt-table-sync
+databases = db1,db2,db3
+dsndb = percona
+
+[email]
+username = zabbix@com.cn
+password = xxxxx
+smtp_server = mail.com.cn
+smtp_port = 25
+mail_sender = zabbix@com.cn
+mail_receiver = wanghaobo@com.cn,liuchunbo@com.cn
